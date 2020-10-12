@@ -57,10 +57,11 @@ const photo = (res) => {
   let html = "";
   res.forEach((element) => {
     html += `
-
+  
 			<div class="gallery-item" tabindex="0">
 			<img src="${element.urls.full}" class="gallery-image" alt="">
 				<div class="gallery-item-info">
+
 					<ul>
 						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i>${element.likes}</li>
 						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
@@ -68,6 +69,8 @@ const photo = (res) => {
 
 				</div>
 
+            </div>
+          
 
     `;
       });

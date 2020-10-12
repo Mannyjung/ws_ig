@@ -6,10 +6,14 @@ const addImagestoGallery = (res) => {
     <section class="photo">
     <header class="photo__header">
       <div class="photo__header-column">
+       <a href="profile.html?username=${element.user.username}">
         <img class="photo__avatar" src="${element.user.profile_image.medium}"/>
+        </a>
       </div>
       <div class="photo__header-column">
+      <a href="profile.html?username=${element.user.username}">
         <span class="photo__username">${element.user.name}</span>
+          </a>
       </div>
     </header>
     <div class="photo__file-container">
